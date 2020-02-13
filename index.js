@@ -94,30 +94,47 @@
 
 /*find largest of three integers*/
 
-var firstNumber=prompt("enter first Number");
-var secondNumber=prompt("enter second Number");
-var thirdNumber=prompt("enter third Number");
+// var firstNumber=prompt("enter first Number");
+// var secondNumber=prompt("enter second Number");
+// var thirdNumber=prompt("enter third Number");
 
 
-function checkLargest(firstNumber,secondNumber,thirdNumber){
-    if(firstNumber>secondNumber && firstNumber>thirdNumber){
-        return firstNumber;
-    }else if(secondNumber>firstNumber && secondNumber>thirdNumber){
-        return secondNumber;
-    }else if(thirdNumber>firstNumber && thirdNumber>secondNumber){
-        return thirdNumber;
-    }else{
-        return 0;
-    }
+// function checkLargest(firstNumber,secondNumber,thirdNumber){
+//     if(firstNumber>secondNumber && firstNumber>thirdNumber){
+//         return firstNumber;
+//     }else if(secondNumber>firstNumber && secondNumber>thirdNumber){
+//         return secondNumber;
+//     }else if(thirdNumber>firstNumber && thirdNumber>secondNumber){
+//         return thirdNumber;
+//     }else{
+//         return 0;
+//     }
+// }
+// var result=checkLargest(firstNumber,secondNumber,thirdNumber);
+// console.log(result);
+
+
+
+
+/*javascript function to convert farehheight into celcius */
+
+var celciusInput=prompt("enter temprature in celcius");
+
+function celciusToFahrenheight(celciusInput){
+    var farehheight=(celciusInput*(9/5))+32;
+    return farehheight;
 }
-var result=checkLargest(firstNumber,secondNumber,thirdNumber);
+var result=celciusToFahrenheight(celciusInput);
 console.log(result);
 
+var farenheightInput=prompt("enter temprature in farenheight");
 
-
-
-
-
+function farenheightToCelcius(farenheightInput){
+    var celcius=(farenheightInput-32)*(5/9);
+    return celcius;
+}
+result=farenheightToCelcius(farenheightInput);
+console.log(result);
 
 
 
